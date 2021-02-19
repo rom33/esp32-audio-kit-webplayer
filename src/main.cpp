@@ -96,7 +96,7 @@ void loop(void)
     if (sStation.length() > 20)
     {
       tft.setFreeFont(&FreeSerif18pt7b);
-      tft.fillRect(0, 0, 320, 30, TFT_BLACK);
+      tft.fillRect(0, 0, 320, 36, TFT_BLACK);
       tft.setTextColor(TFT_WHITE);
       xPosStation -= 8;
       tft.drawString(sStation, xPosStation, 0);
@@ -106,7 +106,7 @@ void loop(void)
     if (sinfo.length() > 26)
     {
       tft.setFreeFont(&FreeSerif12pt7b);
-      tft.fillRect(0, 60, 320, 22, TFT_BLACK);
+      tft.fillRect(0, 60, 320, 24, TFT_BLACK);
       tft.setTextColor(TFT_BLUE);
       xPos -= 4;
       tft.drawString(sinfo, xPos, 60);
